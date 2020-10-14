@@ -1,0 +1,35 @@
+[Added Associations]
+application/epub+zip=calibre-gui.desktop;
+application/octet-stream=vim.desktop;
+application/pdf=org.gnome.Evince.desktop;mupdf.desktop;org.inkscape.Inkscape.desktop;libreoffice-draw.desktop;
+application/rss+xml=firefox.desktop;
+application/rtf=libreoffice-writer.desktop;
+application/vnd.openxmlformats-officedocument.wordprocessingml.document=libreoffice-writer.desktop;
+application/x-bittorrent=transmission-gtk.desktop;
+application/x-raw-disk-image=gnome-disk-image-writer.desktop;
+application/x-wine-extension-ini=vim.desktop;
+application/xhtml+xml=firefox.desktop;
+audio/mpeg=vlc.desktop;org.gnome.Lollypop.desktop;audacity.desktop;
+image/bmp=org.nomacs.ImageLounge.desktop;org.gnome.Evince.desktop;
+image/jpeg=org.nomacs.ImageLounge.desktop;
+image/png=org.nomacs.ImageLounge.desktop;
+text/csv=libreoffice-calc.desktop;
+text/html=firefox.desktop;org.gnome.Evince.desktop;
+text/plain=vim.desktop;org.gnome.gedit.desktop;
+text/vcard=vim.desktop;
+text/x-log=vim.desktop;
+video/mp4=vlc.desktop;
+video/x-matroska=vlc.desktop;org.gnome.Totem.desktop;
+x-scheme-handler/sms=org.gnome.Shell.Extensions.GSConnect.desktop;
+x-scheme-handler/tel=org.gnome.Shell.Extensions.GSConnect.desktop;
+
+[Default Applications]
+application/vnd.sqlite3=vdb.desktop;
+application/x-sqlite3=vdb.desktop;
+text/html=firefox.desktop;
+x-scheme-handler/etcher=balena-etcher-electron.desktop;
+x-scheme-handler/file=org.gnome.Nautilus.desktop;
+x-scheme-handler/magnet=transmission-gtk.desktop;
+x-scheme-handler/msteams=teams.desktop;
+x-scheme-handler/sgnl=signal-desktop.desktop;
+application/pdf=org.gnome.Evince.desktop
