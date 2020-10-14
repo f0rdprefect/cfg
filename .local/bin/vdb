@@ -1,0 +1,9 @@
+#!/bin/bash
+result=$(sqlite3 $1 "select * from vdb_data where usr = 0 order by topic asc ,item asc ,modified desc;" |fzf)
+topic=$(echo $result | cut -d\| -f1)
+result=$(vdb-topic $1 $topic)
+echo -n -e "[${topic}]\n$result" | /usr/bin/xsel -p -i
+# Put text in clipboard selection for apps like Firefox that 
+# insist on using the clipboard for all pasting
+echo -n -e "[${topic}]\n$result" | /usr/bin/xsel -b -i
+echo -n -e "[${topic}]\n$result" 

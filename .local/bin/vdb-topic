@@ -1,0 +1,2 @@
+#!/bin/bash
+sqlite3 -separator '=' $1 "select item,value from vdb_data where (usr = 0 and topic = '$2' ) order by item asc ,modified desc;" 
