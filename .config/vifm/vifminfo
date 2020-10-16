@@ -1,0 +1,74 @@
+# You can edit this file by hand, but it's recommended not to do that.
+
+# Marks:
+'H
+	/home/matt/
+	..
+1602836852
+'b
+	/home/matt/bin/
+	..
+1602836852
+'h
+	/home/matt/
+	..
+1602836852
+
+# Bookmarks:
+
+# TUI:
+ar
+q0
+v2
+ov
+m-1
+l2
+r2
+
+# Left window history (oldest to newest):
+d/home/matt/work/raithapplication
+	scanboard
+16
+d/home/matt/work/deployment
+	changelog.txt
+6
+d
+
+# Right window history (oldest to newest):
+D/home/matt/work/raithapplication
+	RhinoMocks
+18
+D/home/matt/work/mastervdb
+	ConfigManagement.png
+5
+D
+
+# Command line history (oldest to newest):
+:set number
+:set relnumber
+:help
+:colorscheme Default
+:q
+
+# Search history (oldest to newest):
+
+# Prompt history (oldest to newest):
+
+# Local filter history (oldest to newest):
+
+# Registers:
+
+# Directory stack (oldest to newest):
+
+# Trash content:
+
+# State:
+f
+i1
+[.1
+[F
+F
+I1
+].1
+]F
+s0
