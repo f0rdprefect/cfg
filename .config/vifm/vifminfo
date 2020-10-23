@@ -17,7 +17,7 @@
 # Bookmarks:
 
 # TUI:
-ar
+al
 q0
 v2
 ov
@@ -32,6 +32,12 @@ d/home/matt/work/raithapplication
 d/home/matt/work/deployment
 	changelog.txt
 6
+d/home/matt/Calibre Library
+	Harold Abelson, Gerald Jay Sussman, Julie Sussman
+6
+d/home/matt/Calibre Library/Harold Abelson, Gerald Jay Sussman, Julie Sussman
+	Structure and Interpretation of Computer Programs, 2nd ed_ (27)
+1
 d
 
 # Right window history (oldest to newest):
@@ -39,8 +45,20 @@ D/home/matt/work/raithapplication
 	RhinoMocks
 18
 D/home/matt/work/mastervdb
-	ConfigManagement.png
-5
+	..
+0
+D/home/matt/work
+	raithapplication
+17
+D/home/matt/work/raithapplication
+	chocolatey
+23
+D/home/matt/work/raithapplication/chocolatey
+	boxstarter.ps1
+8
+D/home/matt
+	..
+0
 D
 
 # Command line history (oldest to newest):
@@ -48,6 +66,8 @@ D
 :set relnumber
 :help
 :colorscheme Default
+:cd ~
+:cd ~/Calibre\ Library/
 :q
 
 # Search history (oldest to newest):
