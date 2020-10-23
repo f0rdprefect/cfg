@@ -1,3 +1,4 @@
 #!/bin/sh
 pacman -Qqe > ~/.config/pkglist.txt
 dconf dump / | sed -n '/\[org.gnome.settings-daemon.plugins.media-keys/,/^$/p' > .~/config/custom-shortcuts-gnome.ini # Export
+exit 0
