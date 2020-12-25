@@ -1,25 +1,24 @@
 # Font configuration (changes require restart)
 font:
-  # The normal (roman) font face to use.
+  # Normal (roman) font face
   normal:
-    family: Hack
-    # Style can be specified to pick a specific face.
+    family: Hack Nerd Font Mono
     style: Regular
 
-  # The bold font face
+  # Bold font face
   bold:
-    family: Hack
-    # Style can be specified to pick a specific face.
-    # style: Bold
+    family: Hack Nerd Font Mono
+    style: Bold
 
-  # The italic font face
+  # Italic font face
   italic:
-    family: Hack
-    # Style can be specified to pick a specific face.
-    # style: Italic
-  size: 12
-# Background opacity
-#
-# Window opacity as a floating point number from `0.0` to `1.0`.
-# The value `0.0` is completely transparent and `1.0` is opaque.
-background_opacity: 0.95
+    family: Hack Nerd Font Mono
+    style: Italic
+
+  # Bold italic font face
+  bold_italic:
+    family: Hack Nerd Font Mono
+    style: Bold Italic
+
+  # Point size
+  size: 12.0
