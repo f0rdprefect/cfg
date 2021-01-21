@@ -1,0 +1,7 @@
+application/pdf; mupdf %s; test=test -n "$DISPLAY"
+image/*; feh %s
+application/msword; ~/.mutt/view_attachment.sh %s "-"  
+application/vnd.openxmlformats-officedocument.wordprocessingml.document; ~/.mutt/view_attachment.sh %s "-" ; 
+text/html; lynx -stdin -dump -force_html -width 70; copiousoutput; description=HTML Text; test=type lynx >/dev/null
+text/html; w3m -I %{charset} -T text/html; copiousoutput;
+text/html; pandoc -f html -t markdown; copiousoutput; description=HTML Text; test=type pandoc >/dev/null
