@@ -64,3 +64,12 @@ checkout the actual content from the git repository to your $HOME
 ```
 cfg checkout main
 ```
+
+Change to SSH:
+--------------
+
+```
+cfg remote set-url origin git@github.com:f0rdprefect/cfg.git
+```
+
+If forked you will need to replace f0rdprefect with your github username...
