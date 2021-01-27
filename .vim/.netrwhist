@@ -1,0 +1,8 @@
+let g:netrw_dirhistmax  =10
+let g:netrw_dirhistcnt =6
+let g:netrw_dirhist_6='/home/matt/.ICAClient'
+let g:netrw_dirhist_5='/home/matt/.todo'
+let g:netrw_dirhist_4='/etc/profile.d'
+let g:netrw_dirhist_3='/home/matt/.config/dofi'
+let g:netrw_dirhist_2='/home/matt/work/raithapplication/RaithSetup/Setup'
+let g:netrw_dirhist_1='/home/matt/work/hercules/draft'
