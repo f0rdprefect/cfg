@@ -328,8 +328,8 @@ let g:gitgutter_enabled = 1
 au BufNewFile,BufRead *.ejs set filetype=html
 autocmd BufRead,BufNewFile *.rst set tw=72
 if has("gui_running")	" GUI color and font settings
-  set guifont=Hack:h12
-  set gfn=Hack\ 12
+  set guifont=Hack\ Nerd\ Font\ 12
+  set gfn=Hack\ Nerd\ Font\ 12
   set background=dark 
   set t_Co=256          " 256 color mode
   set cursorline        " highlight current line
