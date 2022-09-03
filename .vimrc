@@ -358,10 +358,10 @@ call plug#begin('~/.vim/plugged')
 " Make sure you use single quotes
 
 " Shorthand notation; fetches https://github.com/junegunn/vim-easy-align
-"Plug 'junegunn/vim-easy-align'
+Plug 'junegunn/vim-easy-align'
 " Fuzzy Finder
-"Plug 'junegunn/fzf'
-"Plug 'junegunn/fzf.vim'
+Plug 'junegunn/fzf'
+Plug 'junegunn/fzf.vim'
 " Any valid git URL is allowed
 "Plug 'https://github.com/junegunn/vim-github-dashboard.git'
 
@@ -374,9 +374,21 @@ call plug#begin('~/.vim/plugged')
 "Plug 'prabirshrestha/vim-lsp'
 "Plug 'honza/vim-snippets'
 "Plug 'dense-analysis/ale'
+Plug 'liuchengxu/vim-clap'
+Plug 'dense-analysis/ale'
+Plug 'OmniSharp/omnisharp-vim'
 " Initialize plugin system
 call plug#end()
 
 let g:zettelkasten = "/home/matt/Documents/Zettelkasten/"
 command! -nargs=1 NewZettel :execute ":e" zettelkasten . strftime("%Y%m%d%H%M") . "-<args>.md"
 nnoremap <leader>nz :NewZettel 
+
+" Put these lines at the very end of your vimrc file.
+"
+" " Load all plugins now.
+" " Plugins need to be added to runtimepath before helptags can be generated.
+packloadall
+" " Load all of the helptags now, after plugins have been loaded.
+" " All messages and errors will be ignored.
+silent! helptags ALL

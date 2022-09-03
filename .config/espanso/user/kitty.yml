@@ -1,0 +1,6 @@
+class: "kitty"
+fast_inject: false
+
+# backend: Clipboard            -- not necessary; actually seems more performant if omitted
+# paste_shortcut: "ShiftInsert" -- no change with any accepted inputs ("CtrlShiftV", etc.)
+# apply_patch: false            -- no change in any combination
