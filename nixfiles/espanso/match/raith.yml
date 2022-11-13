@@ -1,0 +1,21 @@
+matches:
+  - trigger: ":noc"
+    replace: |
+              Dear Colleagues,
+
+              please receive the Notification of Change concerning the hardware issue HW-$|$.
+
+              Best regards,
+
+              {{myname}}
+
+  - regex: "::\\((?P<where>.*)\\)"
+    replace: "# {{today}}\n  ::@{{where}}::\n"
+    vars: 
+      - name: today
+        type: date
+        params:
+          format: "%Y-%b-%d"
+
+  - trigger: ":rmail"
+    replace: "matthias.berse@raith.de"
