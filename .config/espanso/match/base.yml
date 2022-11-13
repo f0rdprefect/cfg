@@ -42,14 +42,33 @@ matches:
   - trigger: ":thx"
     replace: "Thanks \n{{myname}}"
 
-  - trigger: "mfg"
+  - trigger: ":mfg"
     replace: "Viele Grüße\n\n{{myname}}"
 
   - trigger: "hallo *"
     replace: "Hallo Zusammen,\n\n"
 
   
-  - trigger: ":gitcfg"
+  - trigger: "gitcfg"
     replace: |
               git config user.name "{{myname}} {{mylastname}}"
               git config user.email "{{myname}}.{{mylastname}}@raith.de"
+
+  - trigger: ":facepalm"
+    replace: "🤦"
+
+  - trigger: "mygmail"
+    replace: "{{lowercase}}"
+    vars:
+      - name: lowercase
+        type: shell
+        params: 
+          cmd: "echo $ESPANSO_MYNAME.$ESPANSO_MYLASTNAME@gmail.com"
+
+  - trigger: ":phone"
+    replace: "+491797715371"
+  
+  - trigger: 'Im'
+    replace: 'Im'
+    propagate_case: false
+    word: true
