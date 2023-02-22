@@ -1,0 +1,18 @@
+# XONSH WEBCONFIG START
+# XONSH WEBCONFIG END# XONSH WIZARD START
+# source-zsh "echo loading xonsh foreign shell"
+# XONSH WIZARD END
+$PROMPT = '{env_name}{BOLD_GREEN}{user}{RESET}@{hostname}:{BOLD_GREEN}{cwd}{RESET}|{gitstatus}\n{BOLD_INTENSE_RED}➤{RESET} '
+$MULTILINE_PROMPT = '`·.,¸,.·*¯`·.,¸,.·*¯'
+$XONSH_SHOW_TRACEBACK = True
+$XONSH_STORE_STDOUT = True
+$XONSH_HISTORY_MATCH_ANYWHERE = True
+$COMPLETIONS_CONFIRM = True
+$XONSH_AUTOPAIR = True
+$LS_COLORS='rs=0:di=01;36:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:'
+$fzf_history_binding = "c-r"  # Ctrl+R
+$fzf_ssh_binding = "c-s"      # Ctrl+S
+$fzf_file_binding = "c-t"      # Ctrl+T
+$fzf_dir_binding = "c-g"      # Ctrl+G
+$fzf_find_command = "fd"
+$fzf_find_dirs_command = "fd -t d"
