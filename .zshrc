@@ -73,9 +73,9 @@ export LANG=en_US.UTF-8
 
 # Preferred editor for local and remote sessions
  if [[ -n $SSH_CONNECTION ]]; then
-   export EDITOR='vim'
+   export EDITOR='nvim'
  else
-   export EDITOR='vim'
+   export EDITOR='nvim'
  fi
 
 # Compilation flags
@@ -97,7 +97,7 @@ alias df='df -h'                          # human-readable sizes
 alias free='free -m'                      # show sizes in MB
 alias np='nano -w PKGBUILD'
 alias more=less
-alias vi=vim
+alias vi=nvim
 alias see=xdg-open
 alias open=xdg-open
 #Todo.sh
@@ -106,7 +106,7 @@ alias t='todo.sh -d ~/.todo/config'
 alias ta='todo.sh -d ~/.todo/config  -t add'
 alias tla='todo.sh ls "(A"'
 
-alias did="vim +'normal Go' +'r!date' +'normal Go' ~/Documents/nextcloud.berse.xyz/did.txt"
+alias did="nvim +'normal Go' +'normal Go' ~/Documents/nextcloud.berse.xyz/did.txt"
 alias rmutt="mutt -F ~/.mutt/raith.de"
 alias yayg="yay -Slq | fzf -m --preview 'yay -Si {1}'| xargs -ro yay -S"
 alias yayr="yay -Qeq | fzf -m --preview 'yay -Qi {1}' | xargs -ro yay -Rs"
@@ -195,3 +195,5 @@ transfer(){ if [ $# -eq 0 ];then echo "No arguments specified.\nUsage:\n  transf
 
 
 source /home/matt/.config/broot/launcher/bash/br
+source /home/matt/.config/kopia/completion
+eval "$(starship init zsh)"

@@ -1,13 +1,15 @@
-# XONSH WEBCONFIG START
-# XONSH WEBCONFIG END# XONSH WIZARD START
-# source-zsh "echo loading xonsh foreign shell"
+#$XONSH_DEBUG = 2
+$FOREIGN_ALIASES_SUPPRESS_SKIP_MESSAGE = True
+# XONSH WIZARD START
+source-zsh "echo loading xonsh foreign shell"
 # XONSH WIZARD END
-$PROMPT = '{env_name}{BOLD_GREEN}{user}{RESET}@{hostname}:{BOLD_GREEN}{cwd}{RESET}|{gitstatus}\n{BOLD_INTENSE_RED}➤{RESET} '
+#$PROMPT = '{env_name}{BOLD_GREEN}{user}{RESET}@{hostname}:{BOLD_GREEN}{cwd}{RESET}|{gitstatus}\n{BOLD_INTENSE_RED}➤{RESET} '
 $MULTILINE_PROMPT = '`·.,¸,.·*¯`·.,¸,.·*¯'
 $XONSH_SHOW_TRACEBACK = True
 $XONSH_STORE_STDOUT = True
 $XONSH_HISTORY_MATCH_ANYWHERE = True
 $COMPLETIONS_CONFIRM = True
+$CASE_SENSITIVE_COMPLETIONS = False
 $XONSH_AUTOPAIR = True
 $LS_COLORS='rs=0:di=01;36:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:'
 $fzf_history_binding = "c-r"  # Ctrl+R
@@ -16,3 +18,16 @@ $fzf_file_binding = "c-t"      # Ctrl+T
 $fzf_dir_binding = "c-g"      # Ctrl+G
 $fzf_find_command = "fd"
 $fzf_find_dirs_command = "fd -t d"
+
+# Coloured man page support
+# using 'less' env vars (format is '\E[<brightness>;<colour>m')
+$LESS_TERMCAP_mb = "\033[01;31m"     # begin blinking
+$LESS_TERMCAP_md = "\033[01;31m"     # begin bold
+$LESS_TERMCAP_me = "\033[0m"         # end mode
+$LESS_TERMCAP_so = "\033[01;44;36m"  # begin standout-mode (bottom of screen)
+$LESS_TERMCAP_se = "\033[0m"         # end standout-mode
+$LESS_TERMCAP_us = "\033[00;36m"     # begin underline
+$LESS_TERMCAP_ue = "\033[0m"         # end underline
+
+xontrib load fzf-widgets
+execx($(starship init xonsh))
